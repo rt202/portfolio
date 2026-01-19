@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+/* Design tokens
+  - Background: #020314
+  - Surface:    #0b0f2a
+  - Accent:     #7c3aed
+  - Text:       #f8fafc
+  - Spacing:    16px base
+*/
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  * {
+    @apply antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-text-primary font-sans min-h-screen;
+  }
+
+  a {
+    @apply text-text-primary;
+  }
+}
