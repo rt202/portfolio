@@ -7,7 +7,7 @@ type UseInViewOptions = {
 
 export const useInView = (options: UseInViewOptions = {}) => {
   const ref = useRef<HTMLElement | null>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
     const node = ref.current;
@@ -18,14 +18,14 @@ export const useInView = (options: UseInViewOptions = {}) => {
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     if (reduceMotion) {
-      setIsVisible(true);
+      setIsInView(true);
       return;
     }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
+          setIsInView(true);
           observer.unobserve(entry.target);
         }
       },
@@ -39,5 +39,5 @@ export const useInView = (options: UseInViewOptions = {}) => {
     return () => observer.disconnect();
   }, [options.rootMargin, options.threshold]);
 
-  return { ref, isVisible };
+  return { ref, isInView };
 };

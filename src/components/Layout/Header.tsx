@@ -4,8 +4,7 @@ import { siteConfig } from "../../config/siteConfig";
 const navItems = [
   { id: "home", label: "Home", href: "#home" },
   { id: "about", label: "About", href: "#about" },
-  { id: "projects", label: "Projects", href: "#projects" },
-  { id: "contact", label: "Contact", href: "#contact" }
+  { id: "projects", label: "Projects", href: "#projects" }
 ];
 
 export const Header = () => {
@@ -47,16 +46,15 @@ export const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all ${
-        isScrolled ? "bg-bg/80 backdrop-blur border-b border-white/5" : "bg-bg"
+      className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-[#020314]/90 backdrop-blur-md border-b border-white/5"
+          : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#home" className="text-lg font-semibold text-text-primary">
+        <a href="#home" className="text-lg font-bold text-white">
           {siteConfig.name}
-          <span className="ml-2 hidden text-xs font-normal text-text-muted sm:inline">
-            {siteConfig.title}
-          </span>
         </a>
         <nav className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
@@ -65,8 +63,8 @@ export const Header = () => {
               href={item.href}
               className={`text-sm font-medium transition-colors ${
                 activeSection === item.id
-                  ? "text-accent"
-                  : "text-text-muted hover:text-text-primary"
+                  ? "text-purple-400"
+                  : "text-gray-400 hover:text-white"
               }`}
             >
               {item.label}
@@ -76,7 +74,7 @@ export const Header = () => {
         <button
           type="button"
           onClick={() => setIsOpen((open) => !open)}
-          className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-text-primary transition hover:border-accent"
+          className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white transition hover:border-purple-500"
           aria-label="Toggle navigation menu"
         >
           <span className="sr-only">Toggle navigation</span>
@@ -87,8 +85,8 @@ export const Header = () => {
           </div>
         </button>
       </div>
-      {isOpen ? (
-        <div className="border-t border-white/5 bg-bg/95 px-6 pb-4 md:hidden">
+      {isOpen && (
+        <div className="border-t border-white/5 bg-[#020314]/95 backdrop-blur-md px-6 pb-4 md:hidden">
           <div className="flex flex-col gap-4 pt-4">
             {navItems.map((item) => (
               <a
@@ -97,8 +95,8 @@ export const Header = () => {
                 onClick={() => setIsOpen(false)}
                 className={`text-sm font-medium ${
                   activeSection === item.id
-                    ? "text-accent"
-                    : "text-text-muted hover:text-text-primary"
+                    ? "text-purple-400"
+                    : "text-gray-400 hover:text-white"
                 }`}
               >
                 {item.label}
@@ -106,7 +104,7 @@ export const Header = () => {
             ))}
           </div>
         </div>
-      ) : null}
+      )}
     </header>
   );
 };
