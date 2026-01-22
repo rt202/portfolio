@@ -6,6 +6,7 @@ export type Project = {
   githubUrl: string;
   liveUrl: string;
   status?: string;
+  imageUrl: string;
 };
 
 export const siteConfig = {
@@ -20,9 +21,9 @@ export const siteConfig = {
   },
   about: {
     profileImage:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
     description:
-      "I'm a data scientist with experience in machine learning, statistics, and experimentation. I focus on building models that ship to production and deliver measurable impact. I love collaborating with product and engineering teams to create data-driven features. My work blends rigorous analysis with practical implementation to drive smarter decisions.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     skills: [
       "Python",
       "pandas",
@@ -44,38 +45,35 @@ export const siteConfig = {
         title: "Demand Forecasting Ops",
         description:
           "End-to-end forecasting pipeline with automated retraining, monitoring, and alerting for supply chain planning.",
-        tags: ["Python", "Airflow", "XGBoost", "Snowflake"],
+        tags: ["Python", "Airflow", "XGBoost"],
         githubUrl: "#",
         liveUrl: "#",
-        status: "Live Demo"
+        status: "Live Demo",
+        imageUrl:
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
       },
       {
         id: "personalization-engine",
         title: "Personalization Engine",
         description:
-          "Real-time recommendation service that improved CTR and session depth using hybrid collaborative filtering.",
-        tags: ["PyTorch", "FastAPI", "Redis", "Docker"],
+          "Real-time recommendation service that improved CTR using hybrid collaborative filtering.",
+        tags: ["PyTorch", "FastAPI", "Redis"],
         githubUrl: "#",
         liveUrl: "#",
-        status: "In Progress"
+        status: "In Progress",
+        imageUrl:
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80"
       },
       {
         id: "anomaly-hub",
         title: "Anomaly Detection Hub",
         description:
           "Self-serve dashboard for anomaly detection that flags data quality issues and unusual KPIs.",
-        tags: ["React", "TypeScript", "Postgres", "Supabase"],
+        tags: ["React", "TypeScript", "Postgres"],
         githubUrl: "#",
-        liveUrl: "#"
-      },
-      {
-        id: "nlp-feedback",
-        title: "NLP Feedback Miner",
-        description:
-          "Topic modeling and sentiment pipeline that clusters user feedback into actionable product insights.",
-        tags: ["Python", "spaCy", "GCP", "BigQuery"],
-        githubUrl: "#",
-        liveUrl: "#"
+        liveUrl: "#",
+        imageUrl:
+          "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80"
       }
     ] as Project[]
   },
