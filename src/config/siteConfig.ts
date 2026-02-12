@@ -10,13 +10,13 @@ export type Project = {
 };
 
 export const siteConfig = {
-  name: "YOUR NAME",
+  name: "Ronak Thakker",
   title: "Data Scientist",
   tagline:
-    "I turn messy data into clear insights and deployable machine learning systems.",
+    "From beginning to end, I build pipelines, clean data, and deploy models in production",
   hero: {
     intro: "Hi, I'm",
-    subtitle: "Data Scientist | Machine Learning | Analytics",
+    subtitle: "Data Scientist | Machine Learning | Ops",
     resumeUrl: "#"
   },
   about: {
@@ -26,13 +26,13 @@ export const siteConfig = {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     skills: [
       "Python",
-      "pandas",
-      "scikit-learn",
+      "Snowflake",
+      "TensorFlow",
       "SQL",
       "AWS",
       "PyTorch",
       "Feature Engineering",
-      "Experimentation"
+      "Git Actions"
     ]
   },
   projects: {
@@ -41,11 +41,11 @@ export const siteConfig = {
     featuredProjectId: "forecasting-ops",
     items: [
       {
-        id: "forecasting-ops",
-        title: "Demand Forecasting Ops",
+        id: "nba-playoffs",
+        title: "NBA Playoff Predictor",
         description:
           "End-to-end forecasting pipeline with automated retraining, monitoring, and alerting for supply chain planning.",
-        tags: ["Python", "Airflow", "XGBoost"],
+        tags: ["Machine Learning", "Web Scraping"],
         githubUrl: "#",
         liveUrl: "#",
         status: "Live Demo",
