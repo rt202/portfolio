@@ -1,0 +1,18 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="32" fill="#020314"/>
+  <circle cx="230" cy="170" r="180" fill="#7C3AED" fill-opacity="0.18"/>
+  <circle cx="1030" cy="480" r="170" fill="#4F46E5" fill-opacity="0.18"/>
+  <rect x="88" y="86" width="1024" height="458" rx="32" fill="#0A0D24" stroke="#1F244A"/>
+  <text x="120" y="210" fill="#A78BFA" font-family="Inter, Arial, sans-serif" font-size="28" letter-spacing="6">
+    RONAK THAKKER
+  </text>
+  <text x="120" y="300" fill="white" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="700">
+    Data Scientist
+  </text>
+  <text x="120" y="380" fill="white" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="700">
+    and ML Builder
+  </text>
+  <text x="120" y="458" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="28">
+    ML Prep, local multi-model LLM workflows, and fantasy prediction demos.
+  </text>
+</svg>

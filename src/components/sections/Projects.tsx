@@ -10,6 +10,18 @@ export const Projects = () => {
   const { ref, isInView } = useInView({ threshold: 0.1 });
   const { items, intro } = siteConfig.projects;
 
+  const getLinkProps = (href: string) => {
+    if (!href || href === "#") {
+      return { href: "#", target: undefined, rel: undefined };
+    }
+
+    if (href.startsWith("#")) {
+      return { href, target: undefined, rel: undefined };
+    }
+
+    return { href, target: "_blank", rel: "noreferrer" };
+  };
+
   return (
     <section
       id="projects"
@@ -42,7 +54,10 @@ export const Projects = () => {
 
         {/* Project cards grid */}
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {items.map((project, index) => (
+          {items.map((project, index) => {
+            const liveLink = getLinkProps(project.liveUrl);
+
+            return (
             <div
               key={project.id}
               className={`group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0a0d24] transition-all duration-500 hover:-translate-y-2 hover:border-purple-500/40 hover:shadow-[0_20px_60px_-15px_rgba(124,58,237,0.3)] ${
@@ -96,13 +111,14 @@ export const Projects = () => {
                 {/* Links */}
                 <div className="mt-6 flex gap-4">
                   <a
-                    href={project.liveUrl}
+                    href={liveLink.href}
                     className="text-sm font-semibold text-purple-400 transition-colors hover:text-purple-300"
-                    target="_blank"
-                    rel="noreferrer"
+                    target={liveLink.target}
+                    rel={liveLink.rel}
                   >
-                    View Details →
+                    {project.liveUrl.startsWith("#") ? "Explore Demo ->" : "View Details ->"}
                   </a>
+                  {project.githubUrl !== "#" && (
                   <a
                     href={project.githubUrl}
                     className="text-sm font-semibold text-gray-400 transition-colors hover:text-white"
@@ -111,10 +127,12 @@ export const Projects = () => {
                   >
                     GitHub
                   </a>
+                  )}
                 </div>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Add a final custom-domain sitemap URL once the portfolio domain is live.

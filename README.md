@@ -14,9 +14,11 @@ npm run dev
 All text, links, and project data are centralized in `src/config/siteConfig.ts`.
 
 - Update your name, hero copy, and resume link in `siteConfig.hero`.
+- Set the final production domain in `siteConfig.siteUrl` once the portfolio has its own custom domain.
 - Replace the profile image URL and about text in `siteConfig.about`.
 - Edit `siteConfig.projects.items` to add or remove projects.
 - Contact links and labels live in `siteConfig.contact` and `siteConfig.socials`.
+- Lightweight demo data for the portfolio lives in `src/data/showcaseData.ts`.
 
 ## Adding or editing projects
 
@@ -37,5 +39,6 @@ Global styling and design token notes live at the top of `src/index.css`.
 ## Structure
 
 - `src/components/Layout` contains `Header` and `Footer`.
-- `src/components/sections` contains `Hero`, `About`, `Projects`, `Contact`.
+- `src/components/sections` contains `Hero`, `About`, `Projects`, `Demos`, `Contact`.
 - `src/components/common/Section.tsx` provides consistent spacing and animation.
+- `docs/domain-launch.md` covers custom-domain and ML Prep integration notes.

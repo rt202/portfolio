@@ -10,68 +10,82 @@ export type Project = {
 };
 
 export const siteConfig = {
-  name: "YOUR NAME",
-  title: "Data Scientist",
+  siteUrl: "",
+  seo: {
+    title: "Ronak Thakker | Data Scientist and ML Builder",
+    description:
+      "Portfolio for Ronak Thakker featuring ML Prep, local multi-model LLM experiments, and predictive modeling work in fantasy basketball.",
+    ogImagePath: "/og-preview.svg"
+  },
+  links: {
+    mlPrepUrl: "https://mlprep.vercel.app"
+  },
+  name: "Ronak Thakker",
+  title: "Data Scientist and ML Builder",
   tagline:
-    "I turn messy data into clear insights and deployable machine learning systems.",
+    "I build production-minded ML products, local LLM workflows, and decision systems that make model outputs useful in the real world.",
   hero: {
     intro: "Hi, I'm",
-    subtitle: "Data Scientist | Machine Learning | Analytics",
-    resumeUrl: "#"
+    subtitle: "Data Scientist | Applied ML | Local AI Systems",
+    resumeUrl: ""
   },
   about: {
     profileImage:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "I focus on building machine learning systems that are practical to ship and easy to reason about. My recent work spans interview prep products, local multi-model LLM experiments, and predictive modeling projects where the interface matters just as much as the model.",
     skills: [
       "Python",
-      "pandas",
-      "scikit-learn",
+      "Machine Learning",
+      "LLM Evaluation",
+      "Prompt Routing",
       "SQL",
-      "AWS",
-      "PyTorch",
+      "React",
+      "Vite",
+      "Supabase",
+      "Vercel",
       "Feature Engineering",
-      "Experimentation"
+      "Forecasting"
     ]
   },
   projects: {
     intro:
-      "A selection of machine learning and data products I've built across forecasting, personalization, and analytics automation.",
-    featuredProjectId: "forecasting-ops",
+      "A selection of applied ML products and experiments across interview prep, local LLM systems, and sports analytics.",
+    featuredProjectId: "ml-prep",
     items: [
       {
-        id: "forecasting-ops",
-        title: "Demand Forecasting Ops",
+        id: "ml-prep",
+        title: "ML Prep",
         description:
-          "End-to-end forecasting pipeline with automated retraining, monitoring, and alerting for supply chain planning.",
-        tags: ["Python", "Airflow", "XGBoost"],
+          "Interview prep platform with structured learning paths, API-backed progress tracking, and production deployment across Vercel services.",
+        tags: ["React", "Vite", "Vercel", "Supabase"],
         githubUrl: "#",
-        liveUrl: "#",
-        status: "Live Demo",
+        liveUrl: "https://mlprep.vercel.app",
+        status: "Live",
         imageUrl:
           "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
       },
       {
-        id: "personalization-engine",
-        title: "Personalization Engine",
+        id: "local-llm-router",
+        title: "Local Multi-Model LLM Router",
         description:
-          "Real-time recommendation service that improved CTR using hybrid collaborative filtering.",
-        tags: ["PyTorch", "FastAPI", "Redis"],
+          "Local workstation setup that routes prompts across Bonsai, Gemma, and Qwen depending on task fit, quality, and latency tradeoffs.",
+        tags: ["Local LLM", "Gemma", "Qwen", "Evaluation"],
         githubUrl: "#",
-        liveUrl: "#",
+        liveUrl: "#demos",
         status: "In Progress",
         imageUrl:
           "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80"
       },
       {
-        id: "anomaly-hub",
-        title: "Anomaly Detection Hub",
+        id: "fantasy-basketball",
+        title: "Fantasy Basketball Prediction Engine",
         description:
-          "Self-serve dashboard for anomaly detection that flags data quality issues and unusual KPIs.",
-        tags: ["React", "TypeScript", "Postgres"],
+          "Prediction workflow for fantasy basketball projections with feature-driven estimates, scenario analysis, and lightweight front-end explainability.",
+        tags: ["Forecasting", "Sports Analytics", "Feature Engineering"],
         githubUrl: "#",
-        liveUrl: "#",
+        liveUrl: "#demos",
+        status: "Prototype",
         imageUrl:
           "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80"
       }
@@ -81,7 +95,7 @@ export const siteConfig = {
     heading: "Get in Touch",
     message:
       "Open to data science roles, ML collaborations, and analytics consulting. Let's build something impactful.",
-    email: "hello@example.com",
+    email: "",
     linkedinUrl: "https://www.linkedin.com/",
     githubUrl: "https://github.com/"
   },

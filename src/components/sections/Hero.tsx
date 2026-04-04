@@ -6,6 +6,8 @@ import { siteConfig } from "../../config/siteConfig";
  * Update text or resume link in src/config/siteConfig.ts
  */
 export const Hero = () => {
+  const hasResume = Boolean(siteConfig.hero.resumeUrl);
+
   return (
     <section
       id="home"
@@ -72,11 +74,21 @@ export const Hero = () => {
             View Projects
           </a>
           <a
-            href={siteConfig.hero.resumeUrl}
-            className="inline-flex items-center justify-center rounded-full border-2 border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:border-purple-500/50 hover:bg-white/10"
+            href={siteConfig.links.mlPrepUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center rounded-full border-2 border-purple-500/40 bg-purple-500/10 px-8 py-4 text-base font-semibold text-purple-200 backdrop-blur-sm transition-all duration-300 hover:border-purple-400 hover:bg-purple-500/20 hover:text-white"
           >
-            Download Resume
+            Visit ML Prep
           </a>
+          {hasResume && (
+            <a
+              href={siteConfig.hero.resumeUrl}
+              className="inline-flex items-center justify-center rounded-full border-2 border-white/20 bg-white/5 px-8 py-4 text-base font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:border-purple-500/50 hover:bg-white/10"
+            >
+              Download Resume
+            </a>
+          )}
         </div>
       </div>
 
