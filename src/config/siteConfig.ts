@@ -10,7 +10,7 @@ export type Project = {
 };
 
 export const siteConfig = {
-  siteUrl: "",
+  siteUrl: "https://ronak.mlprep.org",
   seo: {
     title: "Ronak Thakker | Data Scientist and ML Builder",
     description:
@@ -18,7 +18,7 @@ export const siteConfig = {
     ogImagePath: "/og-preview.svg"
   },
   links: {
-    mlPrepUrl: "https://mlprep.vercel.app"
+    mlPrepUrl: "https://mlprep.org"
   },
   name: "Ronak Thakker",
   title: "Data Scientist and ML Builder",
@@ -60,7 +60,7 @@ export const siteConfig = {
           "Interview prep platform with structured learning paths, API-backed progress tracking, and production deployment across Vercel services.",
         tags: ["React", "Vite", "Vercel", "Supabase"],
         githubUrl: "#",
-        liveUrl: "https://mlprep.vercel.app",
+        liveUrl: "https://mlprep.org",
         status: "Live",
         imageUrl:
           "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
@@ -95,9 +95,9 @@ export const siteConfig = {
     heading: "Get in Touch",
     message:
       "Open to data science roles, ML collaborations, and analytics consulting. Let's build something impactful.",
-    email: "",
-    linkedinUrl: "https://www.linkedin.com/",
-    githubUrl: "https://github.com/"
+    email: "rthakk@outlook.com",
+    linkedinUrl: "https://www.linkedin.com/in/rothakker/",
+    githubUrl: "https://github.com/rt202"
   },
   socials: {
     emailLabel: "Email",
