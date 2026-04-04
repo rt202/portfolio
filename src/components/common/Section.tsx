@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { useInView } from "../../hooks/useInView";
 
 type SectionProps = {
@@ -18,7 +18,7 @@ export const Section = ({
   className,
   contentClassName
 }: SectionProps) => {
-  const { ref, isVisible } = useInView({ threshold: 0.2 });
+  const { ref, isInView } = useInView({ threshold: 0.2 });
 
   return (
     <section
@@ -28,7 +28,7 @@ export const Section = ({
     >
       <div
         className={`mx-auto max-w-6xl px-6 py-20 lg:py-24 transition-all duration-700 motion-reduce:transition-none ${
-          isVisible
+          isInView
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-6 motion-reduce:opacity-100 motion-reduce:translate-y-0"
         } ${contentClassName ?? ""}`}

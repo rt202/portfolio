@@ -1,23 +1,23 @@
 import { Header } from "./components/Layout/Header";
+import { Footer } from "./components/Layout/Footer";
+import { SeoHead } from "./components/SeoHead";
 import { Hero } from "./components/sections/Hero";
 import { About } from "./components/sections/About";
+import { Demos } from "./components/sections/Demos";
 import { Projects } from "./components/sections/Projects";
 
 const App = () => {
   return (
     <div className="min-h-screen bg-[#020314] text-white">
+      <SeoHead />
       <Header />
       <main>
         <Hero />
         <About />
         <Projects />
+        <Demos />
       </main>
-      {/* Minimal footer */}
-      <footer className="border-t border-white/5 bg-[#020314] py-8 text-center">
-        <p className="text-sm text-gray-500">
-          © {new Date().getFullYear()} Your Name. Built with React.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 };

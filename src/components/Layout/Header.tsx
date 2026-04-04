@@ -4,7 +4,8 @@ import { siteConfig } from "../../config/siteConfig";
 const navItems = [
   { id: "home", label: "Home", href: "#home" },
   { id: "about", label: "About", href: "#about" },
-  { id: "projects", label: "Projects", href: "#projects" }
+  { id: "projects", label: "Projects", href: "#projects" },
+  { id: "demos", label: "Demos", href: "#demos" }
 ];
 
 export const Header = () => {
@@ -70,6 +71,14 @@ export const Header = () => {
               {item.label}
             </a>
           ))}
+          <a
+            href={siteConfig.links.mlPrepUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full border border-purple-500/40 px-4 py-2 text-sm font-medium text-purple-300 transition-colors hover:border-purple-400 hover:text-white"
+          >
+            ML Prep
+          </a>
         </nav>
         <button
           type="button"
@@ -102,6 +111,15 @@ export const Header = () => {
                 {item.label}
               </a>
             ))}
+            <a
+              href={siteConfig.links.mlPrepUrl}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="text-sm font-medium text-purple-300 hover:text-white"
+            >
+              ML Prep
+            </a>
           </div>
         </div>
       )}
