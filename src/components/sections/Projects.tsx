@@ -10,6 +10,8 @@ export const Projects = () => {
   const { ref, isInView } = useInView({ threshold: 0.1 });
   const { items, intro } = siteConfig.projects;
 
+  const hasVisibleLiveLink = (href: string) => Boolean(href && href !== "#" && href !== "#demos");
+
   const getLinkProps = (href: string) => {
     if (!href || href === "#") {
       return { href: "#", target: undefined, rel: undefined };
@@ -56,6 +58,7 @@ export const Projects = () => {
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {items.map((project, index) => {
             const liveLink = getLinkProps(project.liveUrl);
+            const showLiveLink = hasVisibleLiveLink(project.liveUrl);
 
             return (
             <div
@@ -110,14 +113,16 @@ export const Projects = () => {
 
                 {/* Links */}
                 <div className="mt-6 flex gap-4">
-                  <a
-                    href={liveLink.href}
-                    className="text-sm font-semibold text-purple-400 transition-colors hover:text-purple-300"
-                    target={liveLink.target}
-                    rel={liveLink.rel}
-                  >
-                    {project.liveUrl.startsWith("#") ? "Explore Demo ->" : "View Details ->"}
-                  </a>
+                  {showLiveLink && (
+                    <a
+                      href={liveLink.href}
+                      className="text-sm font-semibold text-purple-400 transition-colors hover:text-purple-300"
+                      target={liveLink.target}
+                      rel={liveLink.rel}
+                    >
+                      {project.liveUrl.startsWith("#") ? "Explore Demo ->" : "View Details ->"}
+                    </a>
+                  )}
                   {project.githubUrl !== "#" && (
                   <a
                     href={project.githubUrl}
