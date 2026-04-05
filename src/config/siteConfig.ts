@@ -53,7 +53,7 @@ export const siteConfig = {
   },
   projects: {
     intro:
-      "A selection of applied ML products and experiments across interview prep, self-hosted local AI systems, and sports analytics.",
+      "What I'm working on right now",
     featuredProjectId: "ml-prep",
     items: [
       {
