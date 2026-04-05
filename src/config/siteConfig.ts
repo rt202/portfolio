@@ -14,7 +14,7 @@ export const siteConfig = {
   seo: {
     title: "Ronak Thakker | Data Scientist and ML Builder",
     description:
-      "Portfolio for Ronak Thakker featuring ML Prep, local multi-model LLM experiments, and predictive modeling work in fantasy basketball.",
+      "Portfolio for Ronak Thakker featuring ML Prep, Project Darkrai, and predictive modeling work in fantasy basketball.",
     ogImagePath: "/og-preview.svg"
   },
   links: {
@@ -30,10 +30,9 @@ export const siteConfig = {
     resumeUrl: ""
   },
   about: {
-    profileImage:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    profileImage: "/images/headshot-2023.jpg",
     description:
-      "I focus on building machine learning systems that are practical to ship and easy to reason about. My recent work spans interview prep products, local multi-model LLM experiments, and predictive modeling projects where the interface matters just as much as the model.",
+      "I'm a production-minded data scientist with a broad scope of skills, ranging from database work, machine learning, llm development, and operations. Outside of my work, I am currently working on a few projects: Creating a local LLM, hosting a website to help others with their coding skills, and in-depth analysis of basketball players. My knowledge on operations allows me to be production-minded and sets me apart as a data scientist that can build projects fully end-to-end.",
     skills: [
       "Python",
       "Machine Learning",
@@ -50,7 +49,7 @@ export const siteConfig = {
   },
   projects: {
     intro:
-      "A selection of applied ML products and experiments across interview prep, local LLM systems, and sports analytics.",
+      "A selection of applied ML products and experiments across interview prep, self-hosted local AI systems, and sports analytics.",
     featuredProjectId: "ml-prep",
     items: [
       {
@@ -62,20 +61,18 @@ export const siteConfig = {
         githubUrl: "#",
         liveUrl: "https://mlprep.org",
         status: "Live",
-        imageUrl:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
+        imageUrl: "/images/mlprep-homepage.png"
       },
       {
-        id: "local-llm-router",
-        title: "Local Multi-Model LLM Router",
+        id: "project-darkrai",
+        title: "Project Darkrai",
         description:
-          "Local workstation setup that routes prompts across Bonsai, Gemma, and Qwen depending on task fit, quality, and latency tradeoffs.",
-        tags: ["Local LLM", "Gemma", "Qwen", "Evaluation"],
+          "My local LLM build focused on creating and hosting my own model on my computer, with an end-to-end workflow for experimentation, inference, and self-managed deployment.",
+        tags: ["Local LLM", "Self-Hosted AI", "Inference", "Experimentation"],
         githubUrl: "#",
         liveUrl: "#demos",
         status: "In Progress",
-        imageUrl:
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80"
+        imageUrl: "/images/project-darkrai-logo.png"
       },
       {
         id: "fantasy-basketball",
@@ -87,7 +84,7 @@ export const siteConfig = {
         liveUrl: "#demos",
         status: "Prototype",
         imageUrl:
-          "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80"
+          "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80"
       }
     ] as Project[]
   },
