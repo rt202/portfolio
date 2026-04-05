@@ -21,12 +21,12 @@ export const siteConfig = {
     mlPrepUrl: "https://mlprep.org"
   },
   name: "Ronak Thakker",
-  title: "Data Scientist and ML Builder",
+  title: "Data Scientist and Machine Learning Engineer",
   tagline:
-    "I build production-minded ML products, local LLM workflows, and decision systems that make model outputs useful in the real world.",
+    "I build production-minded ML products, local LLMs, and analytics workflows.",
   hero: {
     intro: "Hi, I'm",
-    subtitle: "Data Scientist | Applied ML | Local AI Systems",
+    subtitle: "Data Science | Machine Learning | AI Engineering",
     resumeUrl: ""
   },
   about: {
