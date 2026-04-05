@@ -3,7 +3,6 @@ import { Footer } from "./components/Layout/Footer";
 import { SeoHead } from "./components/SeoHead";
 import { Hero } from "./components/sections/Hero";
 import { About } from "./components/sections/About";
-import { Demos } from "./components/sections/Demos";
 import { Projects } from "./components/sections/Projects";
 
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
         <Hero />
         <About />
         <Projects />
-        <Demos />
       </main>
       <Footer />
     </div>

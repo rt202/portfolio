@@ -32,19 +32,23 @@ export const siteConfig = {
   about: {
     profileImage: "/images/headshot-2023.jpg",
     description:
-      "I'm a production-minded data scientist with a broad scope of skills, ranging from database work, machine learning, llm development, and operations. Outside of my work, I am currently working on a few projects: Creating a local LLM, hosting a website to help others with their coding skills, and in-depth analysis of basketball players. My knowledge on operations allows me to be production-minded and sets me apart as a data scientist that can build projects fully end-to-end.",
+      "I'm a production-minded data scientist with a broad scope of skills, ranging from database work, machine learning, LLM development, and operations. Outside of my work, I am currently working on a few projects: Creating a local LLM, hosting a website to help others with their coding skills, and in-depth analysis of basketball players. My knowledge on operations allows me to be production-minded and sets me apart as a data scientist that can build projects fully end-to-end.",
     skills: [
       "Python",
       "Machine Learning",
-      "LLM Evaluation",
-      "Prompt Routing",
       "SQL",
-      "React",
-      "Vite",
+      "Harness",
       "Supabase",
       "Vercel",
-      "Feature Engineering",
-      "Forecasting"
+      "Snowflake",
+      "Forecasting",
+      "Langchain",
+      "AWS",
+      "TensorFlow",
+      "PyTorch",
+      "SchemaChange",
+      "CI/CD",
+      "React",
     ]
   },
   projects: {
@@ -58,7 +62,7 @@ export const siteConfig = {
         description:
           "Interview prep platform with structured learning paths, API-backed progress tracking, and production deployment across Vercel services.",
         tags: ["React", "Vite", "Vercel", "Supabase"],
-        githubUrl: "#",
+        githubUrl: "https://github.com/rt202/ml-prep",
         liveUrl: "https://mlprep.org",
         status: "Live",
         imageUrl: "/images/mlprep-homepage.png"
@@ -68,7 +72,7 @@ export const siteConfig = {
         title: "Project Darkrai",
         description:
           "My local LLM build focused on creating and hosting my own model on my computer, with an end-to-end workflow for experimentation, inference, and self-managed deployment.",
-        tags: ["Local LLM", "Self-Hosted AI", "Inference", "Experimentation"],
+        tags: ["Local LLM", "Langchain", "Qwen", "Python"],
         githubUrl: "#",
         liveUrl: "#demos",
         status: "In Progress",
@@ -79,7 +83,7 @@ export const siteConfig = {
         title: "Fantasy Basketball Prediction Engine",
         description:
           "Prediction workflow for fantasy basketball projections with feature-driven estimates, scenario analysis, and lightweight front-end explainability.",
-        tags: ["Forecasting", "Sports Analytics", "Feature Engineering"],
+        tags: ["Time Series", "Basketball", "Feature Engineering"],
         githubUrl: "#",
         liveUrl: "#demos",
         status: "Prototype",
@@ -91,7 +95,7 @@ export const siteConfig = {
   contact: {
     heading: "Get in Touch",
     message:
-      "Open to data science roles, ML collaborations, and analytics consulting. Let's build something impactful.",
+      "Reach out to me with any questions!",
     email: "rthakk@outlook.com",
     linkedinUrl: "https://www.linkedin.com/in/rothakker/",
     githubUrl: "https://github.com/rt202"

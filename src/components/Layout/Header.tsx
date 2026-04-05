@@ -4,8 +4,7 @@ import { siteConfig } from "../../config/siteConfig";
 const navItems = [
   { id: "home", label: "Home", href: "#home" },
   { id: "about", label: "About", href: "#about" },
-  { id: "projects", label: "Projects", href: "#projects" },
-  { id: "demos", label: "Demos", href: "#demos" }
+  { id: "projects", label: "Projects", href: "#projects" }
 ];
 
 export const Header = () => {
